@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber-Lab Adventures: Misiones de Red</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>👾 Cyber-Lab Adventures 🕹️</h1>
+        <p>¡Tu campo de entrenamiento para misiones de redes épicas!</p>
+
+        <div class="buttons">
+            <a href="#" id="btn-nuevo-desafio" class="button">¡Dame un Nuevo Desafío!</a>
+            <button id="btn-ayuda" class="button primary">Ayudante de Config.</button>
+        </div>
+        
+        <div id="problema">
+            <h2 id="titulo-problema">Cargando misión...</h2>
+            <div class="instructions">
+                <h3>📋 Tu Misión...</h3>
+                <ul id="lista-instrucciones">
+                    <!-- Las instrucciones se cargarán aquí -->
+                </ul>
+            </div>
+
+            <h2>🗺️ Mapa de Direccionamiento IP 🗺️</h2>
+            <h3>🚀 Routers 🚀</h3>
+            <table>
+                <thead><tr><th>Dispositivo</th><th>Interfaz</th><th>Dirección IP</th><th>Máscara</th></tr></thead>
+                <tbody id="routers-tbody">
+                    <!-- Los datos de los routers se cargarán aquí -->
+                </tbody>
+            </table>
+
+            <h3>💻 Computadoras Amigas 💻</h3>
+            <table>
+                <thead><tr><th>Dispositivo</th><th>Dirección IP</th><th>Máscara</th><th>Gateway</th></tr></thead>
+                <tbody id="pcs-tbody">
+                    <!-- Los datos de los PCs se cargarán aquí -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="config-helper" style="display:none;">
+            <h2>🤖 Ayudante de Configuración Básica 🤖</h2>
+            <p>Aquí tienes los comandos para la configuración inicial de cada router. ¡Copia, pega y enfócate en el protocolo de enrutamiento!</p>
+            <div id="config-output">Cargando configuración...</div>
+        </div>
+
+        <form id="form-solucion">
+            <h2>✅ ¡Prueba tu Configuración! ✅</h2>
+            <p>¡Sube tu archivo de Packet Tracer (.pkt) y veamos si eres un maestro de las redes!</p>
+            <input type="file" id="archivo_pkt" name="archivo_pkt" accept=".pkt" required>
+            <br><br>
+            <button type="submit" class="button primary">¡Verificar Misión!</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
