@@ -1,4 +1,3 @@
-'''
 // script.js
 
 // --- IP Address Management (Simulated ipaddress library) ---
@@ -308,4 +307,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial load
     renderProblema(generarProblema());
 });
-''
